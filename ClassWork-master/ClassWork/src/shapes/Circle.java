@@ -17,23 +17,24 @@ public class Circle implements Shape {
 	 */
 	public Circle(int radius) {
 		// to be implemented by student
+		this.radius = radius;
 	}
 
 	@Override
 	public double calculateArea() {
 		// to be implemented by student
-		return 0.0;
+		return this.radius * this.radius * pi;
 	}
 
 	@Override
 	public double calculatePerimeter() {
 		// to be implemented by student
-		return 0.9;
+		return 2*this.radius * pi;
 	}
 
 	@Override
 	public String toString() {
 		// to be implemented by student
-		return "";
+		return "Radius + ";
 	}
 }
