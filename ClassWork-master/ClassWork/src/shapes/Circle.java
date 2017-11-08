@@ -35,6 +35,6 @@ public class Circle implements Shape {
 	@Override
 	public String toString() {
 		// to be implemented by student
-		return "Radius + ";
+		return "Circle Radius :" + radius;
 	}
 }
