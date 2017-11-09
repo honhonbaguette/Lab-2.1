@@ -19,9 +19,10 @@ public class Runner {
 		Shape circle1 = new Circle(3);
 		Shape rectangle1 = new Rectangle(10, 4);
 		Shape square1 = new Square(10);
+		Shape etriangle1 = new Triangle(10, 5);
 
 		System.out.println("First test out the hard coded shape arraay.\n\n");
-		Shape[] shapeArr = { circle1, rectangle1, square1 };
+		Shape[] shapeArr = { circle1, rectangle1, square1, etriangle1 };
 
 		for (Shape shape : shapeArr) {
 			System.out.println(shape);
