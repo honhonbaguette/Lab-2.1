@@ -20,7 +20,7 @@ public class Triangle implements Shape{
 	
 	public String toString() {
 		// To be written by student
-		return "Equalateral Triangle height: " + height + "Equalateral Triangle base: " + base + " Equalateral Triangle area: " + calculateArea() + " Equalateral Triangle perimeter: " + calculatePerimeter();
+		return "Equalateral Triangle Height: " + height + " Base: " + base + " Area: " + calculateArea() + " Perimeter: " + calculatePerimeter();
 	}
 
 }

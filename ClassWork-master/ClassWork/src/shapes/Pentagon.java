@@ -20,6 +20,6 @@ public class Pentagon implements Shape{
 		return this.side * 5;
 	}
 	public String toString() {
-		return "Pentaogn apothem : " + apothem "Pentagon side: " + side " Pentagon area: " +calculateArea() "Pentagon perimeter: " + calculatePerimeter();
+		return "Pentaogn Apothem : " + apothem + " Side: " + side + " Area: " +calculateArea() + "Perimeter: " + calculatePerimeter();
 	}
 }
