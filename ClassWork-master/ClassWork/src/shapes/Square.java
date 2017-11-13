@@ -12,7 +12,7 @@ public class Square extends Rectangle {
 	@Override
 	public String toString() {
 		// To be written by student
-		return "Square Side: " + side;
+		return "Square Side: " + side + " Square Area: " + calculateArea() + " Square Perimeter: " + calculatePerimeter();
 	}
 
 }
