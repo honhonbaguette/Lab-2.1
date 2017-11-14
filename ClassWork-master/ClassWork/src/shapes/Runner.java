@@ -23,6 +23,7 @@ public class Runner {
 		Shape pentagon1 = new Pentagon(10,9);
 		square1.calculateArea();
 		square1.calculatePerimeter();
+		
 
 		System.out.println("First test out the hard coded shape arraay.\n\n");
 		Shape[] shapeArr = { circle1, rectangle1, square1, etriangle1, pentagon1 };

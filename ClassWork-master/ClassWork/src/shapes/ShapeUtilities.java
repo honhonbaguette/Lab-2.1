@@ -1,13 +1,12 @@
 package shapes;
 
 import java.util.Random;
-
 /**
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
  *
  */
-
 public class ShapeUtilities {
+	Shape [] area =  Square , Circle ,  Pentagon ,  Rectangle;
 
 	/**
 	 * Creates a random shape from the choices.
@@ -30,16 +29,23 @@ public class ShapeUtilities {
 		}
 
 	}
-
 	/**
 	 * adds up the area of all the shapes in the array
 	 * 
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumArea(Shape[] shapes) {
+
+	
+	public static double sumArea(Shape[] shapes) 
+	{
+		double totalarea = 0;
+		for(Shape calulateArea : circle) 
+		{
+			
+		}
 		// To be written by student
-		return Circle.calculateArea();
+		return ac.calculateArea;
 	}
 
 	/**
