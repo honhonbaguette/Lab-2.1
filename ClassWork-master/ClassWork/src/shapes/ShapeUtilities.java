@@ -6,8 +6,7 @@ import java.util.Random;
  *
  */
 public class ShapeUtilities {
-	//Shape area = {Square , Circle , Pentagon , Rectangle};
-	double[] area = {calculateArea};
+	//Shape area = {Square , Circle , Parallelogram , Rectangle , Triangle};
 
 	/**
 	 * Creates a random shape from the choices.
@@ -16,7 +15,7 @@ public class ShapeUtilities {
 	 */
 	public static Shape randomShape() {
 		Random rand = new Random();
-		int x = rand.nextInt(3);
+		int x = rand.nextInt(5);
 
 		switch (x) {
 		case 0:
@@ -25,6 +24,10 @@ public class ShapeUtilities {
 			return new Rectangle(rand.nextInt(50), rand.nextInt(50));
 		case 2:
 			return new Square(rand.nextInt(50));
+		case 3:
+			return new Parallelogram(rand.nextInt(50), rand.nextInt(50), rand.nextInt(50));
+		case 4:
+			return new Triangle(rand.nextInt(50), rand.nextInt(50));
 		default:
 			return new Circle(rand.nextInt(100));
 		}
@@ -38,15 +41,17 @@ public class ShapeUtilities {
 	 */
 
 	
-	public static double sumArea(Shape[] shapes)
+	public static double sumArea(Shape[] shape)
 	{
 		double totalarea = 0;
-		for(totalarea : area) 
+		for(int i = 0; i<shape.length; i++) 
 		{
-			
+			totalarea = shape[i].calculateArea() + totalarea;
+		
 		}
 		// To be written by student
-		return ac.calculateArea;
+		return totalarea;
+		
 	}
 
 	/**
@@ -55,9 +60,15 @@ public class ShapeUtilities {
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumPerimeter(Shape[] shapes) {
+	public static double sumPerimeter(Shape[] shape) 
+	{
 		// To be written by student
-		return 0.0;
+		double totalperimeter = 0;
+		for(int i = 0; i<shape.length; i++)
+		{
+			totalperimeter = shape[i].calculatePerimeter() + totalperimeter;
+		}
+		return totalperimeter;
 	}
 
 }

@@ -16,7 +16,7 @@ package shapes;
 public class Runner {
 
 	public static void main(String[] args) {
-		Shape parallelogram1 = new Parallelogram(12,6);
+		Shape parallelogram1 = new Parallelogram(12,6,5);
 		Shape circle1 = new Circle(3);
 		Shape rectangle1 = new Rectangle(10, 4);
 		Shape square1 = new Square(10);
