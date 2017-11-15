@@ -6,7 +6,8 @@ import java.util.Random;
  *
  */
 public class ShapeUtilities {
-	Shape [] area =  Square , Circle ,  Pentagon ,  Rectangle;
+	//Shape area = {Square , Circle , Pentagon , Rectangle};
+	double[] area = {calculateArea};
 
 	/**
 	 * Creates a random shape from the choices.
@@ -37,10 +38,10 @@ public class ShapeUtilities {
 	 */
 
 	
-	public static double sumArea(Shape[] shapes) 
+	public static double sumArea(Shape[] shapes)
 	{
 		double totalarea = 0;
-		for(Shape calulateArea : circle) 
+		for(totalarea : area) 
 		{
 			
 		}
